@@ -26,13 +26,14 @@ void insert(void* info) {
 	auto newNode = createNode(info);
 	if (head->next == nullptr) {
 		head->next = newNode;
+		incrementCount();
 		return;
 	}
 	auto curr = head->next;
 	while (curr->next != nullptr)
 		curr = curr->next;
-
 	curr->next = newNode;
+
 	incrementCount();
 }
 
@@ -44,6 +45,11 @@ void displayList() {
 		curr = curr->next;
 	}
 }
+
+int getCount() {
+	return (int)head->info;
+}
+
 void incrementCount() {	
 	auto x =(int)head->info;
 	head->info = reinterpret_cast<void*>(++x);

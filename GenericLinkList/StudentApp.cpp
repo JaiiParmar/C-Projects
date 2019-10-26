@@ -27,5 +27,6 @@ int main()
 	s2->name = new char[10] {"manish"};
 	insert(reinterpret_cast<void*>(&s2));
 	displayList();
+	cout << endl << "Count : " << getCount();
 	return 0;
 }

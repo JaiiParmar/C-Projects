@@ -6,4 +6,5 @@ struct Node {
 extern void(*display)(const void*);
 
 void insert(void* info);
+int getCount();
 void displayList();
