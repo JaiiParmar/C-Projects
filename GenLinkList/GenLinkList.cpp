@@ -80,8 +80,10 @@ void insertAfter(void* source, void* info) {
 	}
 }
 void remove(void* info) {
+
 	if (head == nullptr)
 		return;
+	
 	if (compare(info, head->next->info)) {
 		auto t = head->next->next ;
 		delete head->next;
@@ -89,16 +91,17 @@ void remove(void* info) {
 		decrementCount();
 	}
 	
-		auto curr = head->next;
-		while(curr->next != nullptr){
-			if (info, curr->next->info) {
-				auto t = curr->next->next;
-				delete curr->next;
-				curr->next = t;
-				decrementCount();
-				return;
-			}
+	auto curr = head->next;
+	while(curr->next != nullptr){
+	
+		if (compare(info, curr->next->info)) {
+			auto t = curr->next->next;
+			delete curr->next;
+			curr->next = t;
+			decrementCount();
+			return;
 		}
+	}
 }
 
 void* find(void* info) {

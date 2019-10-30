@@ -63,17 +63,17 @@ int main()
 	if (s != nullptr)
 		cout << endl << " FOUND at " << s << " MEMORY ADDRESS" << endl<< endl;
 	
-	//remove(s2);
-
-	//displayList();
-
-	Student* s5 = new Student;
-	s5->id = 4000;
-	s5->name = new char[20]{ "MOHIT" };
-
-	insertBefore(reinterpret_cast<void*>(s3), reinterpret_cast<void*>(s5));
+	remove(s2);
 
 	displayList();
+
+	//Student* s5 = new Student;
+	//s5->id = 4000;
+	//s5->name = new char[20]{ "MOHIT" };
+
+	//insertBefore(reinterpret_cast<void*>(s3), reinterpret_cast<void*>(s5));
+
+	//displayList();
 
 	return 0;
 }
