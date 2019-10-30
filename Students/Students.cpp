@@ -12,6 +12,9 @@ struct Student {
 	char* name;
 };
 
+/*
+	Reading the data from the file.
+*/
 void readData() {
 	char data[100];  // for storing name temporary 
 	char tab;			
@@ -40,9 +43,28 @@ void readData() {
 	f.close();
 }
 
+/*
+	Writing the data.
+*/
+
+void writeData() {
+	ofstream fout("MScIt.txt", ios::out);
+
+	if (!fout.is_open()) {		// if failed to open the file.
+		cout << endl << "Error while opening file." << endl;
+		return;
+	}
+
+	fout << "HelloWorld";  // wring in the file.
+	fout.close();
+	cout << endl << "Successfully written the data!" << endl;
+}
+
+
 int main()
 {
-	readData();
+	//readData();
+	writeData();		
 	return 0;
 }
 
