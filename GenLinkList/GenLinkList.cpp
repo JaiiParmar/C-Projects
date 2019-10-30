@@ -6,7 +6,8 @@
 #include"LinkList.h"
 #include"BackEndLinkList.h"
 
-void (*display)(const void* s) = nullptr;
+void (*display)(const void* ) = nullptr;
+bool (*compare)(const void* , const void*) = nullptr;
 
 Node* createNode(void* info) {
 	Node* newNode = new Node;
@@ -23,18 +24,93 @@ Node* createNode(void* info) {
 
 void insert(void* info) {
 
-	auto newNode = createNode(info);
+	Node* newNode = createNode(info);
+	
 	if (head->next == nullptr) {
 		head->next = newNode;
 		incrementCount();
 		return;
 	}
+
 	auto curr = head->next;
 	while (curr->next != nullptr)
 		curr = curr->next;
 	curr->next = newNode;
 
 	incrementCount();
+}
+
+void insertBefore(void* source, void* info) {
+	if (head == nullptr)
+		return;
+	if (compare(source, head->next->info)) {
+		auto t = createNode(info);
+		t->next = head->next;
+		head->next = t;
+		incrementCount();
+		return;
+	}
+
+	auto curr = head->next;
+	while (curr->next != nullptr) {
+		if (compare(source, curr->next->info)) {
+			auto t = createNode(info);
+			t = curr->next;
+			curr->next = t;
+			incrementCount();
+			return;
+		}
+		curr = curr->next;
+	}
+}
+
+void insertAfter(void* source, void* info) {
+	if (head == nullptr)
+		return;
+	auto curr = head->next;
+	while (curr != nullptr) {
+		if (compare(source, curr->info)) {
+			auto t = createNode(info);
+			t = curr->next;
+			curr->next = t;
+			incrementCount();
+			return;
+		}
+		curr = curr->next;
+	}
+}
+void remove(void* info) {
+	if (head == nullptr)
+		return;
+	if (compare(info, head->next->info)) {
+		auto t = head->next->next ;
+		delete head->next;
+		head->next = t;
+		decrementCount();
+	}
+	
+		auto curr = head->next;
+		while(curr->next != nullptr){
+			if (info, curr->next->info) {
+				auto t = curr->next->next;
+				delete curr->next;
+				curr->next = t;
+				decrementCount();
+				return;
+			}
+		}
+}
+
+void* find(void* info) {
+	
+	Node* curr = head->next;
+	
+	while (curr != nullptr) {
+		if (compare(info, curr->info))
+			return curr->info;
+		curr = curr->next;
+	}
+	return nullptr;
 }
 
 void displayList() {
