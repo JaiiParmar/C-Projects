@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StudentApp.cpp">
+    <ClCompile Include="GenericLinkListTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

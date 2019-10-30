@@ -131,6 +131,10 @@ void displayList() {
 	}
 }
 
+/*
+	Delete the list.
+*/
+
 int getCount() {
 	return (int)head->info;
 }

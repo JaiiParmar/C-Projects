@@ -1,5 +1,5 @@
 #include<iostream>
-#include<string>
+#include <fstream>
 #include"LinkList.h"
 
 using namespace std;
@@ -26,20 +26,19 @@ void displayItem(const void* s) {
 		<< "NAME : " << sobj->name<< endl<< endl;
 }
 
-int main()
-{
+void testLinkList() {
 	display = displayItem;
 	compare = cmprById;
 	Student* s1 = new Student;
 	s1->id = 10;
 	s1->name = new char[20]{ "JAYESH" };
-	
+
 	insert(reinterpret_cast<void*>(s1));
-	
-	Student* s2= new Student;
+
+	Student* s2 = new Student;
 	s2->id = 20;
-	s2->name = new char[20]{"MANISH"};
-	
+	s2->name = new char[20]{ "MANISH" };
+
 	insert(reinterpret_cast<void*>(s2));
 
 	Student* s3 = new Student;
@@ -55,14 +54,14 @@ int main()
 	insert(reinterpret_cast<void*>(s4));
 
 	displayList();
-	
-	cout << endl << "Count : " << getCount() << endl ;
-	
+
+	cout << endl << "Count : " << getCount() << endl;
+
 	void* s = find(s2);
-	
+
 	if (s != nullptr)
-		cout << endl << " FOUND at " << s << " MEMORY ADDRESS" << endl<< endl;
-	
+		cout << endl << " FOUND at " << s << " MEMORY ADDRESS" << endl << endl;
+
 	remove(s2);
 
 	cout << endl << "Count : " << getCount() << endl;
@@ -90,5 +89,11 @@ int main()
 	displayList();
 
 	cout << endl << "Count : " << getCount() << endl;
+
+}
+
+int main()
+{
+	testLinkList();
 	return 0;
 }

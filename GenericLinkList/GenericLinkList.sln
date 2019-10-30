@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenericLinkList", "GenericL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenLinkList", "..\GenLinkList\GenLinkList.vcxproj", "{3D76AA50-699B-4149-8D82-326488050C19}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Students", "..\Students\Students.vcxproj", "{5D4BE454-4B6A-4F24-AA49-31169EC208B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{3D76AA50-699B-4149-8D82-326488050C19}.Release|x64.Build.0 = Release|x64
 		{3D76AA50-699B-4149-8D82-326488050C19}.Release|x86.ActiveCfg = Release|Win32
 		{3D76AA50-699B-4149-8D82-326488050C19}.Release|x86.Build.0 = Release|Win32
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Debug|x64.ActiveCfg = Debug|x64
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Debug|x64.Build.0 = Debug|x64
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Debug|x86.ActiveCfg = Debug|Win32
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Debug|x86.Build.0 = Debug|Win32
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Release|x64.ActiveCfg = Release|x64
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Release|x64.Build.0 = Release|x64
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Release|x86.ActiveCfg = Release|Win32
+		{5D4BE454-4B6A-4F24-AA49-31169EC208B6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

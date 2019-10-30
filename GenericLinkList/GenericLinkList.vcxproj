@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="StudentApp.cpp" />
+    <ClCompile Include="GenericLinkListTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GenLinkList\GenLinkList.vcxproj">
