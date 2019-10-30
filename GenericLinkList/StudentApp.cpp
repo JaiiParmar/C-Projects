@@ -65,15 +65,20 @@ int main()
 	
 	remove(s2);
 
+	cout << endl << "Count : " << getCount() << endl;
+
+
 	displayList();
 
-	//Student* s5 = new Student;
-	//s5->id = 4000;
-	//s5->name = new char[20]{ "MOHIT" };
+	Student* s5 = new Student;
+	s5->id = 4000;
+	s5->name = new char[20]{ "MOHIT" };
 
-	//insertBefore(reinterpret_cast<void*>(s3), reinterpret_cast<void*>(s5));
+	insertBefore(reinterpret_cast<void*>(s3), reinterpret_cast<void*>(s5));
 
-	//displayList();
+	displayList();
+
+	cout << endl << "Count : " << getCount() << endl;
 
 	return 0;
 }

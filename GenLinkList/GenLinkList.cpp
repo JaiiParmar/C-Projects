@@ -41,9 +41,11 @@ void insert(void* info) {
 }
 
 void insertBefore(void* source, void* info) {
-	if (head == nullptr)
+	
+	if (head == nullptr)                     // if List is empty.
 		return;
-	if (compare(source, head->next->info)) {
+	
+	if (compare(source, head->next->info)) { // if the source is the very first node.
 		auto t = createNode(info);
 		t->next = head->next;
 		head->next = t;
@@ -52,14 +54,16 @@ void insertBefore(void* source, void* info) {
 	}
 
 	auto curr = head->next;
-	while (curr->next != nullptr) {
+	while (curr->next != nullptr) {            // find the source.
+		
 		if (compare(source, curr->next->info)) {
 			auto t = createNode(info);
-			t = curr->next;
+			t->next = curr->next;
 			curr->next = t;
 			incrementCount();
 			return;
 		}
+
 		curr = curr->next;
 	}
 }
