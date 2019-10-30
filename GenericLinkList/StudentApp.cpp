@@ -80,5 +80,15 @@ int main()
 
 	cout << endl << "Count : " << getCount() << endl;
 
+
+	Student* s6 = new Student;
+	s6->id = 5000;
+	s6->name = new char[20]{ "PRIYANKA" };
+
+	insertAfter(reinterpret_cast<void*>(s4), reinterpret_cast<void*>(s6));
+
+	displayList();
+
+	cout << endl << "Count : " << getCount() << endl;
 	return 0;
 }

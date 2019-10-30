@@ -69,13 +69,15 @@ void insertBefore(void* source, void* info) {
 }
 
 void insertAfter(void* source, void* info) {
-	if (head == nullptr)
+	if (head == nullptr)				// if list is empty.
 		return;
+
 	auto curr = head->next;
-	while (curr != nullptr) {
+	
+	while (curr != nullptr) {			// find source.
 		if (compare(source, curr->info)) {
-			auto t = createNode(info);
-			t = curr->next;
+			auto t = createNode(info);		
+			t->next = curr->next;
 			curr->next = t;
 			incrementCount();
 			return;
