@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <fstream>
+#include "LinkList.h"
 
 using namespace std;
 
@@ -11,6 +12,13 @@ struct Student {
 	float cpi;
 	char* name;
 };
+
+void displayItem(const void* obj) {
+	Student* s = (Student*)obj;
+	cout << endl
+		 << s->id << " "<< s->cpi << " " << s->name;
+}
+
 
 /*
 	Reading the data from the file.
@@ -30,8 +38,7 @@ void readData() {
 			f.getline(data, 100);			
 			s->name = new char[strlen(data) + 1];
 			strcpy_s(s->name, strlen(data) + 1, data);
-			cout << endl
-				<< s->id << " " << s->name << s->cpi << endl;
+			insert(reinterpret_cast<void*>(s));
 		}
 
 	}
@@ -42,7 +49,8 @@ void readData() {
 
 	f.close();
 }
-
+void showData() {
+}
 /*
 	Writing the data.
 */
@@ -63,8 +71,11 @@ void writeData() {
 
 int main()
 {
-	//readData();
-	writeData();		
+	readData();
+	display = displayItem;
+	displayList();
+	
+	//writeData();		
 	return 0;
 }
 
