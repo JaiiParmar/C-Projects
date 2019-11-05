@@ -3,9 +3,24 @@
 
 #include <iostream>
 
+using uchar = unsigned char ;
+
+uchar settings = 0;
+
+void turn_on(uchar mask) {
+	
+}
+
+void turn_off(uchar mask) {
+
+}
+
+void show_status() {
+	
+}
 int main()
 {
-    std::cout << "Hello World!\n";
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
