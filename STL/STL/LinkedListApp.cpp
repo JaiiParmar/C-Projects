@@ -17,4 +17,9 @@ void main() {
 		std::cout << " -- " << *i;
 	}
 
+	fl.sort();
+	std::cout << std::endl << "SORT";
+	for (auto i = fl.begin(); i != fl.end(); i++) {
+		std::cout << " -- " << *i;
+	}
 }
