@@ -22,4 +22,4 @@ int main()
 template <typename T> 
 T larger(T a, T b) {
 	return a > b ? a : b;
-}
+}	
