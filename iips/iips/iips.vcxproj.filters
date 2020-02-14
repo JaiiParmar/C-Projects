@@ -15,35 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="STL.cpp">
+    <ClCompile Include="iips.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StackApp.cpp">
+    <ClCompile Include="Box.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="QueueApp.cpp">
+    <ClCompile Include="Singleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="deque.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="priority_queue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practice.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="set.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

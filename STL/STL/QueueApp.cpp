@@ -16,7 +16,7 @@ void display(T& q, std::string title) {
 
 }
 //
-//void main() {
+//int main() {
 //
 //	std::queue<int>	q;
 //	
@@ -36,5 +36,6 @@ void display(T& q, std::string title) {
 //
 //	cout <<endl << "BACK :  "<<q2.back();
 //	cout << endl << "FRONT:  " << q2.front();
-//	q2.
+//
+//
 //}

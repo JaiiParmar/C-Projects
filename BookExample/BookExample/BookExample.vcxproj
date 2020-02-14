@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{EC473FA6-EC5F-4F6A-A6D2-A5329D6F6BEA}</ProjectGuid>
+    <ProjectGuid>{8CE2EC13-FFFE-44C1-9AF5-F86AB63AFF5C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>STL</RootNamespace>
+    <RootNamespace>BookExample</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -87,7 +87,6 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -102,7 +101,6 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -117,7 +115,6 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
@@ -136,7 +133,6 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
@@ -151,16 +147,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Array.cpp" />
-    <ClCompile Include="deque.cpp" />
-    <ClCompile Include="LinkedListApp.cpp" />
-    <ClCompile Include="Practice.cpp" />
-    <ClCompile Include="priority_queue.cpp" />
-    <ClCompile Include="QueueApp.cpp" />
-    <ClCompile Include="set.cpp" />
-    <ClCompile Include="StackApp.cpp" />
-    <ClCompile Include="STL.cpp" />
-    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="Aardvark.cpp" />
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="BookExample.cpp" />
+    <ClCompile Include="Lion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aardvark.h" />
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Lion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

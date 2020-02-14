@@ -1,7 +1,7 @@
 #include<iostream>
 #include<stack>
 
-
+//
 //void main() {
 //	std::stack <int> s;
 //	
@@ -16,7 +16,8 @@
 //	while (!s.empty()) {
 //		std::cout <<std::endl<< s.top();
 //		s.pop();
-//		if (s.empty())
+//		if (s.empty())	
 //			std::cout << std::endl << "Stack is empty.";
 //	}
+//
 //}

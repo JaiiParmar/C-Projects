@@ -4,26 +4,61 @@
 #include<iomanip>
 #include<vector>
 
+#include<string>
+
 using namespace std;
+
+struct Student {
+
+	int id;
+	string name;
+
+
+};
+void display(Student s) {
+	cout << endl << "ID : " << s.id << "          NAME : " << s.name;
+}
+
+struct idComparer {
+	bool operator()(const Student& s1, const Student& s2)
+	{
+		return  s1.id < s2.id;
+	}
+};
+
+struct nameComparer {
+	bool operator()(const Student& s1, const Student& s2) {
+		return s1.name < s2.name;
+	}
+};
+template <typename T> 
+void fillRandom(T& q) {
+	for (int i = 0; i < 10; i++)
+	{
+		Student s;
+		s.id = rand();
+		s.name = "XYA";
+		q.push(s);
+	}
+	cout << endl << "FILLED";
+}
 
 template <typename T>
 void display(T& pq)
 {
 	cout << endl << endl << "START :";
+
 	while(!pq.empty()){
-		cout << setw(10) << pq.top();
+		display(pq.top());
 		pq.pop();
 	}
 }
 
-void main() {
-	
-	priority_queue<string, vector<string>, greater<string>> pq;
-	
-	pq.push(string("Manish"));
-	pq.push(string("Ajit"));
-	pq.push(string("Sanjai"));
-	pq.push(string("Priyanka"));
-	pq.push(string("Neha"));
-	display(pq);
-}
+//int main() {
+//
+//	priority_queue<Student,  vector<Student>,	nameComparer> pq;
+//	fillRandom(pq);
+//	display(pq);
+//	return 0;
+//}
+

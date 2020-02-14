@@ -15,35 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="STL.cpp">
+    <ClCompile Include="BookExample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StackApp.cpp">
+    <ClCompile Include="Animal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="QueueApp.cpp">
+    <ClCompile Include="Lion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListApp.cpp">
+    <ClCompile Include="Aardvark.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="deque.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="priority_queue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practice.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="set.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Aardvark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

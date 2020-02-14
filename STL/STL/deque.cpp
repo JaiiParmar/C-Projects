@@ -1,5 +1,8 @@
 #include<iostream>
 #include<deque>
+
+using namespace std;
+
 template <typename T>
 void showDeque(T& d) {
 
@@ -8,6 +11,7 @@ void showDeque(T& d) {
 		std::cout << " --> " << *i;
 	}
 }
+
 template <typename T>
 void FillUp(T& dq, int size) {
 	for (size_t i = 0; i < size; i++)
@@ -50,6 +54,6 @@ void FillUp(T& dq, int size) {
 //	dq.insert(dq.cbegin() + 5, 4 ,9999999);
 //	showDeque(dq);
 //	std::cout << std::endl << "SIZE : " << dq.size();
-//
+//	
 //}
-//
+

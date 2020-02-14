@@ -15,35 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="STL.cpp">
+    <ClCompile Include="Assignment2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StackApp.cpp">
+    <ClCompile Include="Complex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="QueueApp.cpp">
+    <ClCompile Include="ComplexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListApp.cpp">
+    <ClCompile Include="MegaString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="deque.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="priority_queue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practice.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="set.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MegaString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
