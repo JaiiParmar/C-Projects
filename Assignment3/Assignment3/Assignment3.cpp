@@ -5,10 +5,22 @@
 
 #include <iostream>
 
+//question 1;
 #include "A.h"
 #include "B.h"
+//question 2;
 #include "q2A.h"
 #include "Q2B.h"
+//question 3;
+#include "Q3AA.h"
+#include "Q3BB.h"
+#include "Q3CC.h"
+#include "Q3DD.h"
+//question 4;
+#include "Q4AAA.h"
+#include "Q4BBB.h"
+#include "Q4CCC.h"
+#include "Q4DDDD.h"
 
 void question1() 
 {
@@ -36,6 +48,7 @@ void question2()
 	//create a bill
 	q2A bill1;
 	bill1.setBillId(101);
+	//
 	std::cout << bill1.getBillId() << std::endl;
 
 	//create Products
@@ -58,9 +71,62 @@ void question2()
 	p1.getBillId()->showProducts();
 }
 
+/*Tightly coupled*/
+
+void question3() {
+	/*
+	**************************************
+		 ->PHONE(A)
+				->SPEAKER(B)
+				-----------------------
+				->CAMERA(C)
+						->FLASHLIGHT(D)
+				-----------------------
+	***************************************
+	*/
+
+	Q3DD mFlash;
+	Q3CC mCamera(mFlash);
+	Q3BB mSpeaker;
+	Q3AA mPhone( mSpeaker, mCamera);
+
+	mPhone.spakerOn();
+	mPhone.cameraOn();
+	mPhone.flashOn();
+}
+
+/*loosely coupled*/
+
+void question4() {
+	/*
+	**************************************
+		 ->PHONE(A)
+				->SPEAKER(B)
+				-----------------------
+				->CAMERA(C)
+						->FLASHLIGHT(D)
+				-----------------------
+	***************************************
+	*/
+
+	Q4DDDD mFlash;
+
+	Q4CCC mCamera(&mFlash);
+
+	Q4BBB mSpeaker;
+
+	Q4AAA mPhone(&mSpeaker, &mCamera);
+
+	mPhone.spakerOn();
+	mPhone.cameraOn();
+	mPhone.flashOn();
+}
+
 int main()
 {
 	
 	//question1();
-	question2();
+	//question2();
+	//question3();
+	question4();
 }

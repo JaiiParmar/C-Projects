@@ -1,7 +1,7 @@
-#include "Q3DD.h"
+#include "Q4DDDD.h"
+
 #include <iostream>
 
-
-void Q3DD::flash() {
+void Q4DDDD::flash() {
 	std::cout << "Flash is on, keep your eyes cover." << std::endl;
 }

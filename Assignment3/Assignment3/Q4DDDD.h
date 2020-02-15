@@ -1,5 +1,5 @@
 #pragma once
-class Q3DD
+class Q4DDDD
 {
 public:
 	void flash();
