@@ -1,7 +1,8 @@
 
-
 #pragma once
 #include <string>
+class A;
+
 class B
 {
 

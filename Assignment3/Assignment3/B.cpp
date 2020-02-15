@@ -2,6 +2,8 @@
 #include "A.h"
 #include <string>
 
+B::B() = default;
+
 void B::setTitle(std::string title) {
 	this->title = title;
 	contactA = nullptr;

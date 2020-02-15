@@ -1,12 +1,14 @@
+
 #pragma once
 #include <string>
+class B;
 
 class A
 {
 
 private: 
 	std::string title;
-	B* contactB;
+	B* contactB;	
 
 public:
 	A();

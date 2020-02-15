@@ -24,12 +24,24 @@
     <ClCompile Include="B.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="q2A.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q2B.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="B.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="q2A.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Q2B.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

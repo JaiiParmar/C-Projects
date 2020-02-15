@@ -150,10 +150,14 @@
     <ClCompile Include="A.cpp" />
     <ClCompile Include="Assignment3.cpp" />
     <ClCompile Include="B.cpp" />
+    <ClCompile Include="q2A.cpp" />
+    <ClCompile Include="Q2B.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A.h" />
     <ClInclude Include="B.h" />
+    <ClInclude Include="q2A.h" />
+    <ClInclude Include="Q2B.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
