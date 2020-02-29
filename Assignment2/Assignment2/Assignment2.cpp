@@ -23,7 +23,7 @@ void question3()
 	ms3.display();
 	
 	MegaString m("ABC", 3);
-	MegaString n("ABC", 3);
+	MegaString n("ABC", 3);		
 	MegaString k("XYZ", 3);
 	
 	// check == operator
@@ -122,7 +122,7 @@ void quesion1()
 
 int main()
 {
-	question3();
+	quesion1();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

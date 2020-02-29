@@ -152,12 +152,28 @@
     <ClCompile Include="B.cpp" />
     <ClCompile Include="q2A.cpp" />
     <ClCompile Include="Q2B.cpp" />
+    <ClCompile Include="Q3AA.cpp" />
+    <ClCompile Include="Q3BB.cpp" />
+    <ClCompile Include="Q3CC.cpp" />
+    <ClCompile Include="Q3DD.cpp" />
+    <ClCompile Include="Q4AAA.cpp" />
+    <ClCompile Include="Q4BBB.cpp" />
+    <ClCompile Include="Q4CCC.cpp" />
+    <ClCompile Include="Q4DDDD.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A.h" />
     <ClInclude Include="B.h" />
     <ClInclude Include="q2A.h" />
     <ClInclude Include="Q2B.h" />
+    <ClInclude Include="Q3AA.h" />
+    <ClInclude Include="Q3BB.h" />
+    <ClInclude Include="Q3CC.h" />
+    <ClInclude Include="Q3DD.h" />
+    <ClInclude Include="Q4AAA.h" />
+    <ClInclude Include="Q4BBB.h" />
+    <ClInclude Include="Q4CCC.h" />
+    <ClInclude Include="Q4DDDD.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
